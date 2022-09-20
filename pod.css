@@ -17,7 +17,7 @@ section{
     position: relative;
     top: 5rem;
     width: 80%;
-    height: 70vh;
+    height: 90vh;
     margin: 0 auto;
     border-radius: 20px;;
     background: #FFFFFF;
@@ -26,23 +26,26 @@ section{
 .Section__Right{
     position: absolute;
     width: 20%;
-    height: 70vh;
+    height: 90vh;
     border: 1px solid red;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background: #F6F6F6;
 }
 
-/* .Section__Right ul{
-    margin-right: 10px;
-} */
+.Section__Right ul{
+    margin-top: 10px;
+}
 
 .Section__Right ul li{
     list-style: none;
+    padding-top: 7px;
+    padding-left: 15px;
 }
 
 .Section__Right ul li img{
-    width: 40px;
-    border: 1px solid blue;
+    width: 35px;
+    margin-top: 20px;
+    padding-right: 10px;
     border-radius: 50px;
 }
