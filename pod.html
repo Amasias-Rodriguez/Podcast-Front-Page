@@ -1,46 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pod.css">
-    <title>Podcast Front Page</title>
-</head>
-<body>
-    <Section>
-        <div class="Section__Right">
-            <ul>
-                <li>
-                    <img src="/imagenes/man.png" alt="man" class="Section__Right--img">
-                    <span>Jimmy D.</span>
-                </li>
-                <li>
-                    <img src="/imagenes/discover.png" alt="" class="Section__Right--img">
-                    <span>Discover</span>
-                </li>
-                <li>
-                    <img src="/imagenes/trending.png" alt="" class="Section__Right--img">
-                    <span>Trending</span>
-                </li>
-                <li>
-                    <img src="/imagenes/streaming.png" alt="" class="Section__Right--img">
-                    <span>Streaming</span>
-                </li>
-                <li>
-                    <img src="/imagenes/playlist.png" alt="" class="Section__Right--img">
-                    <span>Playlist</span>
-                </li>
-                <li>
-                    <img src="/imagenes/search.png" alt="" class="Section__Right--img">
-                    <span>Search</span>
-                </li>
-                <li>
-                    <img src="/imagenes/settings.png" alt="" class="Section__Right--img">
-                    <span>Settings</span>
-                </li>
-            </ul>
-        </div>
-    </Section>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400&family=Manrope:wght@300;600;800&family=Montserrat:wght@300;400;500;700&family=Outfit:wght@400;700&family=Overpass:wght@300;400;500;600&family=PT+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right,#A0C7D5,#57ABC7);
+}
+
+section{
+    position: relative;
+    width: 80%;
+    height: 95vh;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+
+.Section__Right{
+    position: relative;
+    width: 25%;
+    height: 95vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #F6F6F6;
+}
+
+.Section__Right ul{
+    padding-top: 0.2rem;
+    padding-left: 2rem;
+}
+
+.Section__Right ul li{
+    list-style: none;
+    padding-top: 2rem;
+}
+
+.Section__Right ul li:hover{
+    width: 250px;
+    height: 75px;
+    margin-right: 50px;
+    background: linear-gradient(to right,#E4E4E4,#ECECEC,#F1F1F1);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.Section__Right--img{
+    width: 30px;
+}
+
+.Section__Right ul li span{
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.Section__Right ul li:nth-child(1){
+    font-weight: 600;
+}
+
+
+.Section__Right ul li:nth-child(5){
+    border-bottom: 2px solid #E2E2E2;
+    width: 170px;
+    height: 90px;
+    
+}
+
+
+
+
