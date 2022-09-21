@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400&family=Manrope:wght@300;600;800&family=Montserrat:wght@300;400;500;700&family=Outfit:wght@400;700&family=Overpass:wght@300;400;500;600&family=PT+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400&family=Manrope:wght@300;600;800&family=Montserrat:wght@300;400;500;700&family=Outfit:wght@400;700&family=Overpass:wght@300;400;500;600&family=PT+Sans&family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 *{
     margin: 0;
@@ -8,44 +8,82 @@
 }
 
 body{
-    width: 100%;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background: linear-gradient(to right,#A0C7D5,#57ABC7);
 }
 
 section{
     position: relative;
-    top: 5rem;
     width: 80%;
-    height: 90vh;
-    margin: 0 auto;
-    border-radius: 20px;;
+    height: 95vh;
+    border-radius: 20px;
     background: #FFFFFF;
 }
 
 .Section__Right{
-    position: absolute;
-    width: 20%;
-    height: 90vh;
-    border: 1px solid red;
+    position: relative;
+    width: 270px;
+    height: 95vh;
+    padding: 0.2rem 0 0 0.5rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background: #F6F6F6;
 }
 
 .Section__Right ul{
-    margin-top: 10px;
+    width: 290px;
 }
 
 .Section__Right ul li{
     list-style: none;
-    padding-top: 7px;
-    padding-left: 15px;
+    padding-top: 2rem;
+    cursor: pointer;
 }
 
-.Section__Right ul li img{
-    width: 35px;
-    margin-top: 20px;
-    padding-right: 10px;
-    border-radius: 50px;
+.Section__Right--img{
+    position: relative;
+    left: 1rem;
+    width: 30px;
 }
+
+.Section__Right ul li span{
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+.Section__Right--Name{
+    font-weight: 600;
+}
+
+.Section__Right--Playlist{
+    width: 280px;
+}
+
+.Section__Right--hr{
+    width: 125px;
+    border: 1px solid #E2E2E2;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+.Section__Right li:hover{
+    width: 260px;
+    height: 75px;
+    margin-right: 50px;
+    background: linear-gradient(to right,#E4E4E4,#ECECEC,#F1F1F1);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.Section__Right--Playlist:hover{
+    width: 260px;
+}
+
+
+
