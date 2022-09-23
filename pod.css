@@ -23,7 +23,7 @@ section{
 
 .Section__Right{
     position: relative;
-    width: 270px;
+    width: 220px;
     height: 95vh;
     padding: 0.2rem 0 0 0.5rem;
     border-top-left-radius: 20px;
@@ -71,7 +71,7 @@ section{
 
 
 .Section__Right li:hover{
-    width: 260px;
+    width: 213px;
     height: 75px;
     margin-right: 50px;
     background: linear-gradient(to right,#E4E4E4,#ECECEC,#F1F1F1);
@@ -88,15 +88,14 @@ section{
 
 .Section__Center{
     position: absolute;
-    bottom: 1rem;
-    right: -20px;
-    width: 80%;
+    bottom: 15rem;
+    left: 15rem;
+    width: 768px;
     background: #FFFFFF; 
 }
 .Section__Center--h1{
     font-size: 20px;
-    margin-top: 2rem;
-    padding: 15px 0;
+    padding: 3px 0 10px 10px;
 }
 
 .Section__Center-Box1{
@@ -131,22 +130,46 @@ section{
 /* SECTION CENTER DOWN */
 
 .Section__CenterDown{
-    width: 80%;
-    height: 227px;
+    position: absolute;
+    bottom: 10px;
+    left: 15rem;
+    width: 768px;
+    height: 207px;
 }
 
 .Section__CenterDown--h1{
     font-size: 20px;
-    padding: 15px 0;
+    padding: 15px 0 15px 18px;
 }
 
 .Section__CenterDown-Content{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; */
-}
-
-.Section__CenterDown-Footer{
+    width: 468px;
     display: flex;
     align-items: center;
+}
+
+.imgcontainer{
+    padding: 0 10px;
+}
+
+.content p{
+    width: 215px;
+    font-size: 14px;
+}
+
+.span--w{
+    font-size: 12px;
+}
+
+.content svg{
+    position: relative;
+    top: 5px;
+}
+
+.move img,
+.move p,
+.move svg,
+.span--move{
+    position: relative;
+    left: 4rem;
 }
