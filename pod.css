@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -129,3 +128,25 @@ section{
 }
 
 
+/* SECTION CENTER DOWN */
+
+.Section__CenterDown{
+    width: 80%;
+    height: 227px;
+}
+
+.Section__CenterDown--h1{
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.Section__CenterDown-Content{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; */
+}
+
+.Section__CenterDown-Footer{
+    display: flex;
+    align-items: center;
+}
