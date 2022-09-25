@@ -88,13 +88,13 @@ section{
 
 .Section__Center{
     position: absolute;
-    bottom: 15rem;
+    bottom: 10rem;
     left: 15rem;
-    width: 768px;
+    width: 568px;
     background: #FFFFFF; 
 }
 .Section__Center--h1{
-    font-size: 20px;
+    font-size: 16px;
     padding: 3px 0 10px 10px;
 }
 
@@ -110,7 +110,7 @@ section{
 
 .Section__Center-Boxcontent{
     position: relative;
-    width: 235px;
+    width: 205px;
     border: 1px solid #E2E2E2;
     border-radius: 10px;
 }
@@ -131,14 +131,14 @@ section{
 
 .Section__CenterDown{
     position: absolute;
-    bottom: 10px;
+    bottom: -55px;
     left: 15rem;
     width: 768px;
     height: 207px;
 }
 
 .Section__CenterDown--h1{
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px 0 15px 18px;
 }
 
@@ -153,17 +153,17 @@ section{
 }
 
 .content p{
-    width: 215px;
-    font-size: 14px;
+    width: 185px;
+    font-size: 12px;
 }
 
 .span--w{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .content svg{
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 
 .move img,
@@ -171,26 +171,42 @@ section{
 .move svg,
 .span--move{
     position: relative;
-    left: 4rem;
+    left: 2rem;
 }
 
 /* SECTION RIGHT */
 
+.SectionLeft{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+.SectionLeft__h1 h1{
+    font-size: 15px;
+    padding: 15px 0;
+}
+
 .SectionLeft__Container{
-    width: 900px;
+    width: 240px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* grid-column-gap: 10px;
-    grid-row-gap: 10px; */
-    outline: 1px solid green;
+    grid-row-gap: 10px;
 }
 
 .SectionLeft__Icons,
 .SectionLeft__Icons--Row2,
 .SectionLeft__Icons--Row3{
-    width: 250px;
+    width: 100px;
     text-align: center;
-    outline: 1px solid red;
+    padding: 10px 0;
+}
+
+.SectionLeft__Icons h4, span,
+.SectionLeft__Icons--Row2 h4, span,
+.SectionLeft__Icons--Row3 h4, span{
+    font-size: 13px;
+    padding: 5px 0;
 }
 
