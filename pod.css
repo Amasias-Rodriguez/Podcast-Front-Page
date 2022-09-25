@@ -183,7 +183,8 @@ section{
 }
 
 .SectionLeft__h1 h1{
-    font-size: 15px;
+    font-size: 18px;
+    margin-left: 10px;
     padding: 15px 0;
 }
 
@@ -200,7 +201,7 @@ section{
 .SectionLeft__Icons--Row3{
     width: 100px;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .SectionLeft__Icons h4, span,
@@ -210,3 +211,37 @@ section{
     padding: 5px 0;
 }
 
+/* SECTION RIGHT DOWN */
+
+.SectionRightDown{
+    position: absolute;
+    right: 140px;
+    bottom: 10px;
+}
+
+.SectionRightDown h1{
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 10px 0;
+}
+
+.SectionRightDown__container{
+    display: flex;
+    padding: 5px 0;
+}
+
+.SectionRightDown__img img{
+    border-radius: 50px;
+}
+
+.SectionRightDown__text h3{
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.SectionRightDown__text span{
+    font-size: 13px;
+    margin-left: 15px;
+    color: #aaaaaa;
+}
