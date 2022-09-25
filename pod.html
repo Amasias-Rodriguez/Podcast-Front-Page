@@ -1,114 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pod.css">
-    <title>Podcast Front Page</title>
-</head>
-<body>
-    <Section>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        <!-- SECTION RIGHT -->
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right,#A0C7D5,#57ABC7);
+}
 
-        <div class="Section__Right">
-            <ul>
-                <li>
-                    <img src="/imagenes/man.png" alt="man" class="Section__Right--img">
-                    <span class="Section__Right--Name">Jimmy D.</span>
-                </li>
-                <li>
-                    <img src="/imagenes/discover.png" alt="" class="Section__Right--img">
-                    <span>Discover</span>
-                </li>
-                <li>
-                    <img src="/imagenes/trending.png" alt="" class="Section__Right--img">
-                    <span>Trending</span>
-                </li>
-                <li>
-                    <img src="/imagenes/streaming.png" alt="" class="Section__Right--img">
-                    <span>Streaming</span>
-                </li>
-                <li>
-                    <img src="/imagenes/playlist.png" alt="" class="Section__Right--img">
-                    <span class="Section__Right--Playlist">Playlist</span>
-                    <hr class="Section__Right--hr">
-                </li>
-                <li>
-                    <img src="/imagenes/search.png" alt="" class="Section__Right--img">
-                    <span>Search</span>
-                </li>
-                <li>
-                    <img src="/imagenes/settings.png" alt="" class="Section__Right--img">
-                    <span>Settings</span>
-                </li>
-            </ul>
-        </div>
+section{
+    position: relative;
+    width: 95%;
+    height: 95vh;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
 
-        <!-- SECTION CENTER -->
+.Section__Right{
+    position: relative;
+    width: 220px;
+    height: 95vh;
+    padding: 0.2rem 0 0 0.5rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #F6F6F6;
+}
 
-        <div class="Section__Center">
-            <h1 class="Section__Center--h1">
-                Good Morning
-            </h1>
-            <div class="Section__Center-Box1">
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/coffe.png" alt="">
-                    <span>Coffe</span>
-                </div>
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/trend.png" alt="">
-                    <span>Trending</span>
-                </div>
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/work.png" alt="">
-                    <span>Work Space</span>
-                </div>
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/coffe.png" alt="">
-                    <span>Career</span>
-                </div>
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/trend.png" alt="">
-                    <span>Meditation</span>
-                </div>
-                <div class="Section__Center-Boxcontent">
-                    <img src="/imagenes/work.png" alt="">
-                    <span>House Plants</span>
-                </div>
-            </div>
-        </div>
+.Section__Right ul{
+    width: 290px;
+}
 
-        <!-- SECTION CENTER DOWN -->
-        <div class="Section__CenterDown">        
-                <h1 class="Section__CenterDown--h1">
-                    Popular Hari Ini
-                </h1>
-            <div class="Section__CenterDown-Content">
-                <div class="imgcontainer">
-                    <img src="/imagenes/man.png" alt="" style="width: 95px;">
-                </div>
-                <div class="content">
-                    <p>Mau sampai Kapan membandingkan diri dengan kehidupan arang Iain?.</p>
-                    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.25 12 5.75 5.75v12.5L18.25 12Z"></path>
-                    </svg>
-                    <span class="span--w">Jul 29 - 25 min 53 sec - Tayson $</span>
-                </div>
-                
-                <div class="imgcontainer move">
-                    <img src="/imagenes/man.png" alt="" style="width: 95px;">
-                </div>
-                <div class="content move">
-                    <p>Mau sampai Kapan membandingkan diri dengan kehidupan arang Iain?.</p>
-                    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.25 12 5.75 5.75v12.5L18.25 12Z"></path>
-                    </svg>
-                    <span class="span--w span--move">Jul 29 - 25 min 53 sec - Tayson $</span>
-                </div>
-            </div>
-        </div>
-    </Section>
-</body>
-</html>
+.Section__Right ul li{
+    list-style: none;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.Section__Right--img{
+    position: relative;
+    left: 1rem;
+    width: 30px;
+}
+
+.Section__Right ul li span{
+    position: relative;
+    bottom: 10px;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+.Section__Right--Name{
+    font-weight: 600;
+}
+
+.Section__Right--Playlist{
+    width: 280px;
+}
+
+.Section__Right--hr{
+    width: 125px;
+    border: 1px solid #E2E2E2;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+.Section__Right li:hover{
+    width: 213px;
+    height: 75px;
+    margin-right: 50px;
+    background: linear-gradient(to right,#E4E4E4,#ECECEC,#F1F1F1);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.Section__Right--Playlist:hover{
+    width: 260px;
+}
+
+
+/* SECTION CENTER */
+
+.Section__Center{
+    position: absolute;
+    bottom: 15rem;
+    left: 15rem;
+    width: 768px;
+    background: #FFFFFF; 
+}
+.Section__Center--h1{
+    font-size: 20px;
+    padding: 3px 0 10px 10px;
+}
+
+.Section__Center-Box1{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+.Section__Center-Boxcontent{
+    position: relative;
+    width: 235px;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;
+}
+
+.Section__Center-Boxcontent img{
+    width: 60px;
+    height: 60px;
+}
+
+.Section__Center-Boxcontent span{
+    position: absolute;
+    top: 25px;
+    left: 85px;
+}
+
+
+/* SECTION CENTER DOWN */
+
+.Section__CenterDown{
+    position: absolute;
+    bottom: 10px;
+    left: 15rem;
+    width: 768px;
+    height: 207px;
+}
+
+.Section__CenterDown--h1{
+    font-size: 20px;
+    padding: 15px 0 15px 18px;
+}
+
+.Section__CenterDown-Content{
+    width: 468px;
+    display: flex;
+    align-items: center;
+}
+
+.imgcontainer{
+    padding: 0 10px;
+}
+
+.content p{
+    width: 215px;
+    font-size: 14px;
+}
+
+.span--w{
+    font-size: 12px;
+}
+
+.content svg{
+    position: relative;
+    top: 5px;
+}
+
+.move img,
+.move p,
+.move svg,
+.span--move{
+    position: relative;
+    left: 4rem;
+}
+
+/* SECTION RIGHT */
+
+.SectionLeft__Container{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    outline: 1px solid green;
+}
+
+.SectionLeft__Icons,
+.SectionLeft__Icons--Row2,
+.SectionLeft__Icons--Row3{
+    width: 250px;
+    text-align: center;
+    outline: 1px solid red;
+}
+
